@@ -1,0 +1,9 @@
+Django==1.7
+psycopg2
+gunicorn
+dj-database-url
+dj-static
+static
+django-crispy-forms
+requests
+django-model-utils

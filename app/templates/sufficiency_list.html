@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+<h1>List of Sufficiencies</h1>
+{% for sufficiency in object_list %}
+    <a href="{{sufficiency.get_absolute_url}}">{{sufficiency}}, the "{{sufficiency.short_title}}".</a>
+{% endfor %}
+</div>
+
+{% endblock %}

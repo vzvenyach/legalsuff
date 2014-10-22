@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+
+<div class="text-center" style="margin-top:3em;">
+<img src="{% static 'council_seal.jpg'%}" height=100px><br>
+Office of General Counsel<br>
+Council of the District of Columbia<br>
+1350 Pennsylvania Avenue NW, Suite 4<br>
+Washington, DC  20004<br>
+(202) 724-8026
+</div>
+<h2>Memorandum</h2>
+<strong>TO: {{s.councilmember}}</strong><br>
+<strong>FROM: V. David Zvenyach, General Counsel</strong><br>
+<strong>RE: Legal Sufficiency for {{s.measure_type}} {{s.measure_number}}, the {{s.short_title}}</strong><br>
+<hr/>
+{{s.content}}
+</div>
+
+{% endblock %}
